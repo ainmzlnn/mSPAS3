@@ -181,7 +181,7 @@
                                 <td> </td>
                             </tr> -->
                             <tr>
-                                <td><strong>TEACHER:</strong> {{$student->class->teacher?->name ?? '-'}}</td>
+                                <td><strong>TEACHER:</strong> {{$student->class->teacher->name ?? '-'}}</td>
                                 <td></td>
                             </tr>
                         </tbody>
