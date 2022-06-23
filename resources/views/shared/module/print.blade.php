@@ -8,6 +8,7 @@
     <title>Student Progress Report</title>
 
     <!-- Google Font: Source Sans Pro -->
+    <link rel="shortcut icon" type="img/png" href="{{ asset('img/logotransform.png') }}">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
