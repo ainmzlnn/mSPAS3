@@ -18,7 +18,7 @@ class StoreHomeworkSubmissionRequest extends FormRequest
 
     private function isHomeworkNotDue()
     {
-        return $this->route('homework')?->isDue();
+        return $this->route('homework')->isDue();
     }
 
     private function isHomeWorkNotGraded(): bool
