@@ -139,7 +139,7 @@
                                 <!-- <label>Email</label> -->
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
-                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                            <input placeholder="Enter your email" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                             @error('email')
                             <span class="invalid-feedback" role="alert">
@@ -153,7 +153,7 @@
                                 <!-- <label>Password</label> -->
                                 <span class="input-group-text"><i class="fas fa-key"></i></span>
                             </div>
-                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                            <input placeholder="Enter your password" id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                             @error('password')
                             <span class="invalid-feedback" role="alert">

@@ -26,7 +26,7 @@
                             <input name="file" type="file" class="form-control" id="exampleInput" placeholder="">
                             @else
                             <!-- <input name="file" type="file" class="form-control" id="exampleInput" placeholder=""> -->
-                            <a class="btn btn-secondary" href="{{ $student->submission($homework)?->file}}"
+                            <a class="btn btn-secondary" href="{{ $student->submission($homework)->file}}"
                                 download="homework" target="_blank">Download</a>
                             @endif
                             <!-- </span> -->
@@ -66,7 +66,7 @@
                             <label>Comment</label>
                             @if($student->submission($homework)?->comment)
                             <input name="comment" type="text" class="form-control"
-                                value="{{$student->submission($homework)?->comment}}" reaonly disabled>
+                                value="{{$student->submission($homework)->comment}}" reaonly disabled>
                             @else
                             <p>No Comment</p>
                             @endif
@@ -76,7 +76,7 @@
                     <div class="col-sm-1">
                         <label>Marks(/10)</label>
                         <input readonly type="text" class="form-control"
-                            value="{{$student->submission($homework)?->grade}}" readonly disabled>
+                            value="{{$student->submission($homework)->grade}}" readonly disabled>
                     </div>
                 </div>
                 @else

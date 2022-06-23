@@ -35,7 +35,7 @@
                         <div class="col-md-10">
                             <div class="form-group">
                                 <label>Month</label>
-                                <input type="text" class="form-control" placeholder="" name="" value="{{ $module->month?->name }}" readonly>
+                                <input type="text" class="form-control" placeholder="" name="" value="{{ $module->month->name }}" readonly>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                         <div class="col-sm-2">
                             <div class="form-group">
                                 <label>Percentage</label>
-                                <input type="text" class="form-control" placeholder="" name="progresses[{{$loop->iteration}}][progress]" value="{{ $student->getProgress($progress)?->progress }}" {{
+                                <input type="text" class="form-control" placeholder="" name="progresses[{{$loop->iteration}}][progress]" value="{{ $student->getProgress($progress)->progress }}" {{
                                     auth()->user()->hasRole('teacher') ? '' : 'readonly disabled' }}>
                             </div>
                         </div>
