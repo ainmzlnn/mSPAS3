@@ -97,6 +97,6 @@ class Student extends Model
 
     public function getFeedback(Homework $homework)
     {
-        return $homework->submissions()->where('student_id', $this->id)->whereNotNull('feedback')->first('feedback')?->feedback;
+        return $homework->submissions()->where('student_id', $this->id)->whereNotNull('feedback')->first('feedback')->feedback;
     }
 }
