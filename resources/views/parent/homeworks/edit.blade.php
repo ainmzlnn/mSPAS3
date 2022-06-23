@@ -64,7 +64,7 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label>Comment</label>
-                            @if($student->submission($homework)?->comment)
+                            @if($student->submission($homework)->comment)
                             <input name="comment" type="text" class="form-control"
                                 value="{{$student->submission($homework)->comment}}" reaonly disabled>
                             @else
