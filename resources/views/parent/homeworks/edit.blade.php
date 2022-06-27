@@ -19,17 +19,15 @@
                 <div id="actions" class="row">
                     <div class="col-lg-6">
                         <div class="btn-group w-50">
-                            <!-- <span class="btn btn-success col fileinput-button dz-clickable"> -->
-                            <!-- <i class="fas fa-plus"></i> -->
-                            <!-- <span>Add files</span> -->
+                            
                             @if($student->canUploadHomework($homework))
                             <input name="file" type="file" class="form-control" id="exampleInput" placeholder="">
                             @else
-                            <!-- <input name="file" type="file" class="form-control" id="exampleInput" placeholder=""> -->
+
                             <a class="btn btn-secondary" href="{{ $student->submission($homework)->file}}"
                                 download="homework" target="_blank">Download</a>
                             @endif
-                            <!-- </span> -->
+
                         </div>
                     </div>
                 </div>

@@ -15,14 +15,15 @@
 
 <section class="content">
     <div>
+        @if(auth()->user()->hasRole('admin'))
         <nav class="nav nav-pills justify-content-end">
             <a class="nav-item nav-link {{ "all" === request('class', 'all' ) ? 'active' : '' }} " href="
                 {{route('students.index')}}">All</a>
             @foreach($classes as $class)
-            <a class="nav-item nav-link {{ $class->name == request('class') ? 'active' : '' }}"
-                href="{{route('students.index', ['class' => $class->name])}}">{{$class->name}}</a>
+            <a class="nav-item nav-link {{ $class->name == request('class') ? 'active' : '' }}" href="{{route('students.index', ['class' => $class->name])}}">{{$class->name}}</a>
             @endforeach
         </nav>
+        @endif
     </div>
     <!-- <div class="card card-info">
         <div class="card-header">

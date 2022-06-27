@@ -114,6 +114,10 @@
         .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
             background-color: #c0392b !important;
         }
+
+        .navbar-text {
+            align-content: right;
+        }
     </style>
 
 
@@ -143,7 +147,11 @@
                         <li class="nav-item">
                             <a style="color: white;" class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
-                        <!-- @if (Route::has('register'))
+                        <!-- <li class="navbar-nav justify-content-end">
+                            <a class="nav-link" href="{{ url('/') }}" style="color: white;"> Preschool Academic Monitoring System
+                            </a>
+                        </li> -->
+                        <!-- @if (Route::has('register'))s
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
@@ -167,7 +175,13 @@
                         </li>
                         @endguest
                     </ul>
+
                 </div>
+                <ul class="navbar-nav ml-auto">
+                    <span class="navbar-text" style="color:white;">
+                        Preschool Academic Monitoring System
+                    </span>
+                </ul>
             </div>
         </nav>
 

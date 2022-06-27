@@ -15,12 +15,7 @@
 
 <section class="content">
 
-    <!-- <div class="card card-info">
-        <div class="card-header">
-            <h3 class="card-title">Tugasan Kerja Rumah</h3>
-        </div> -->
-    <!-- /.card-header -->
-    <!-- Default box -->
+
     <div>
         <table class="table table-striped projects">
             <thead style="background-color: white;">
